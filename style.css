@@ -271,6 +271,13 @@ section .container .right-container .designer-pf .bottom {
 section .container .right-container .designer-pf .bottom h2 {
   color: white;
   display: block;
+  font-size: 20px;
   margin-top: -70px;
+}
+
+@media (min-width: 1200px) {
+  section .container .right-container .designer-pf .bottom h2 {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
