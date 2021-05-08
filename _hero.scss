@@ -1,0 +1,214 @@
+
+section{
+    min-height: 100vh;
+    background-color: $primary-color;
+    header{
+        display: flex;
+        justify-content: space-between;
+        max-height: 85px;
+        // background-color: rgb(100, 100, 98);
+        h3{
+            font-size: 14px;
+            color: $secondary-color;
+            outline: 1px solid $secondary-color;
+            padding: 8px 8px;
+            margin: 42px 77px;
+            text-transform: uppercase;
+        }
+        .right-header{
+
+            @include respond-below(lg){
+                ul{
+                    li{
+                    display: none;
+                    }
+                }
+            }
+
+
+            ul{
+                display: flex;
+                .active{
+            
+                    border-bottom: 2px solid $secondary-color;
+                }
+
+
+                li{
+                    list-style: none;
+                    margin: 46px 76px;
+
+                   
+                    a{
+                      
+                      
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        @include respond-above(lg){
+                            font-size: 18px;
+
+                
+                        }
+                       
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height:90vh;
+        // background-color: wheat;
+        width:100%;
+        @include respond-above(lg){
+            @include flexdirection(row);
+           
+          
+        }
+        @include respond-below(lg){
+            @include flexdirection(column);
+            margin-top: 200px;
+        }
+        .left-container{
+            // max-height: 600px;
+            @include respond-below(md){
+                padding: 20px;
+            }
+            max-width: 500px;
+            @include respond-above(lg){
+                max-width: 400px;
+               
+            }
+
+            h2{
+                color: $secondary-color;
+                font-size: 36px;
+                margin-top: -150px;
+                @include respond-above(lg){
+                    letter-spacing: 3px;
+                    font-size: 48px;
+
+                }
+            }
+            p{
+                color: $secondary-color;
+                font-size: 23px;
+                margin-top:50px;
+                @include respond-above(lg){
+                    font-size: 20px;
+                    line-height: 35px;
+                }
+            }
+            a{
+                display: block;
+                margin-top: 20px;
+               
+            }
+
+        }
+        .right-container{
+            max-height: 600px;
+            max-width: 600px;
+            position: relative;
+            @include respond-below(sm){
+                max-height: 400px;
+                max-width: 400px;
+
+            }
+            @include respond-below(xs){
+                max-height: 320px;
+                max-width: 320px;
+
+            }
+            @include respond-above(lg){
+                max-height: 600px;
+            max-width: 600px;
+            }
+            // overflow: hidden;
+            img{
+                width: 100%;
+                @include respond-above(lg){
+                    margin-right: -100px;
+                }
+            }
+            .designer-pf{
+                position: absolute;
+                right: 0px;
+                left: 167px;
+                bottom: -107px;
+                @include respond-below(sm){
+                    left: 13px;
+                bottom: -107px;
+                max-width: 300px;
+                }
+            
+                  
+                
+                max-width: 400px;
+                height: 170px;
+                background-color: $primary-color;
+                box-shadow: 0px 2px 5px black;
+                // padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .top{
+                padding: 10px;
+                width: 80%;
+          @include respond-above(lg){
+            width: 70%;
+            max-height: 100px;
+          }
+          @include respond-below(sm ){
+            width: 100%;
+            
+          }
+                    display: flex;
+                    
+                    justify-content: space-between;
+                    // align-items: flex-start;
+                    // background-color: red;
+                    .p-group{
+                        @include respond-below(sm){
+                            padding-left: 20px;
+                        }
+                        padding: 10px;
+                        // display: block;  
+                        display: flex;
+                        flex-direction: column;
+                     
+                    width: 200px;
+                        // background-color: #fff;
+                    }  
+                    p{
+                        // margin-left: 20px;
+                        color: $secondary-color;
+                    }
+
+                    img{
+                        max-width: 60px;
+                        border-radius: 50%;
+                    }
+
+                }
+             .bottom{
+                 max-width: 250px;
+                 padding: 20px 0 0 20px;
+                h2{
+                    color: $secondary-color;
+                    display: block;
+                    margin-top: -70px;
+                }
+             }
+               
+
+            }
+
+        }
+
+    }
+}
