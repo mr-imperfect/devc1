@@ -5,3 +5,12 @@ a{
     text-decoration: none;
     color: $secondary-color;
 }
+
+li{
+    list-style: none;
+}
+
+.active{
+            
+    border-bottom: 2px solid $secondary-color;
+}

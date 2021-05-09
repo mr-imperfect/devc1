@@ -10,6 +10,14 @@ a {
   color: white;
 }
 
+li {
+  list-style: none;
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
 section {
   min-height: 100vh;
   background-color: #181719;
@@ -25,13 +33,89 @@ section header {
   max-height: 85px;
 }
 
+section header .hamnav {
+  display: none;
+}
+
+section header .hamnav.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  background-color: #181719;
+  position: fixed;
+}
+
+section header .hamnav.show h1 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+}
+
+section header .hamnav.show ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section header .hamnav.show ul * {
+  font-size: 24px;
+}
+
 section header h3 {
   font-size: 14px;
   color: white;
   outline: 1px solid white;
   padding: 8px 8px;
-  margin: 42px 77px;
+  margin: 25px 50px;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  section header h3 {
+    margin: 42px 77px;
+  }
+}
+
+section header .right-header {
+  position: relative;
+}
+
+section header .right-header .ham {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+section header .right-header i {
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  section header .right-header i {
+    display: block;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -44,10 +128,6 @@ section header .right-header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-section header .right-header ul .active {
-  border-bottom: 2px solid white;
 }
 
 section header .right-header ul li {
@@ -279,5 +359,17 @@ section .container .right-container .designer-pf .bottom h2 {
   section .container .right-container .designer-pf .bottom h2 {
     font-size: 25px;
   }
+}
+
+section footer {
+  color: #f0e4e4;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=style.css.map */
