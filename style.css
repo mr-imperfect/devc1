@@ -363,6 +363,7 @@ section .container .right-container .designer-pf .bottom h2 {
 
 section footer {
   color: #f0e4e4;
+  height: 50px;
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,6 +371,9 @@ section footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.1rem;
 }
 

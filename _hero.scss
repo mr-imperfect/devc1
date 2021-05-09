@@ -274,13 +274,15 @@ section{
 
     footer{
         color: rgb(240, 228, 228);
-
+       height: 50px;
+    //    background-color: #fff;
         margin-top: 30px;
         @include respond-below(lg){
             margin-top: 60px;
         }
         display: flex;
         justify-content: center;
+        align-items: center;
         font-size: 1.1rem;
         
     }
