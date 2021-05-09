@@ -276,6 +276,9 @@ section{
         color: rgb(240, 228, 228);
 
         margin-top: 30px;
+        @include respond-below(lg){
+            margin: 50px;
+        }
         display: flex;
         justify-content: center;
         font-size: 1.1rem;
